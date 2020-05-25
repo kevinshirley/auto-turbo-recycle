@@ -13,7 +13,7 @@ $black-015: rgba(5, 5, 5, 0.15);
 $link-color: #007bff;;
 
 // Component color
-$navbar-bg-color: $blue-1200;
+$navbar-bg-color: $white;
 $main-menu-bg-color: $blue-1200;
 $side-menu-bg-color: $blue-1200;
 $container-bg-color: $grey-50;
@@ -84,4 +84,82 @@ a {
 }
 
 /* Components */
+.layout {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
+  .navbar {
+    width: 100%;
+    height: 90px;
+    padding: 5px;
+    border: 1px solid #000;
+
+    .inner {
+      background: $navbar-bg-color;
+      border-radius: 7px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .logo {
+        img {
+          width: 180px;
+        }
+      }
+
+      .menu-links {
+        display: flex;
+        align-items: center;
+
+        .navbar-menu-link {
+          font-size: 1.2em;
+          margin-right: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+.home-section-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: $white;
+
+  .inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 3.5em;
+      text-align: center;
+      line-height: 50px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-inline-start: 0;
+      list-style-type: none;
+
+      li {
+        font-size: 1.4em;
+      }
+    }
+
+    .home-sectin-1-cta {
+      font-size: 2.7em;
+      border: 2px solid $black;
+
+      .MuiSvgIcon-root {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

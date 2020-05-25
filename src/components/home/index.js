@@ -5,7 +5,6 @@ import PageHeader from 'src/components/common/page-header';
 function Home() {
   return (
     <>
-      <PageHeader title='Travel Dashboard' />
       <HomeSection1 />
     </>
   );

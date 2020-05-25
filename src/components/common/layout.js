@@ -8,7 +8,7 @@ function Layout(props) {
   return (
     <>
       <Head>
-        <title>Travel Dashboard</title>
+        <title>On achete votre vehicule | Auto Turbo</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" type='text/css' />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type='text/css' />
         <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
