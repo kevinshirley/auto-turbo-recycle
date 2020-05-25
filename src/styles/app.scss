@@ -14,15 +14,11 @@ $link-color: #007bff;;
 
 // Component color
 $navbar-bg-color: $white;
-$main-menu-bg-color: $blue-1200;
-$side-menu-bg-color: $blue-1200;
+$navbar-border-bottom-color: $black-015;
 $container-bg-color: $grey-50;
 $rounded-button-cta-bg-color: $blue-800;
-$navbar-search-bar-bg-color: $white-015;
-$add-itinerary-text-field-bg-color: $black-015;
-$included-item-link-color: $link-color;
-$new-event-cta-bg-color: $blue-1200;
-$new-event-cta-color: $white;
+$home-section-1-bg-color: $white;
+$home-section-1-cta-border-color: $black;
 
 /* Mixins */
 @mixin light-box-shadow {
@@ -94,7 +90,8 @@ a {
     width: 100%;
     height: 90px;
     padding: 5px;
-    border: 1px solid #000;
+    border-bottom: 1px solid $navbar-border-bottom-color;
+    background: $navbar-bg-color;
 
     .inner {
       background: $navbar-bg-color;
@@ -129,7 +126,7 @@ a {
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: $white;
+  background: $home-section-1-bg-color;
 
   .inner {
     display: flex;
@@ -155,7 +152,7 @@ a {
 
     .home-sectin-1-cta {
       font-size: 2.7em;
-      border: 2px solid $black;
+      border: 2px solid $home-section-1-cta-border-color;
 
       .MuiSvgIcon-root {
         font-size: 1.2em;
