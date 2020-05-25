@@ -14,9 +14,11 @@ function HomeSection1() {
           <li>{CHECK_CIRCLE_ICON} Meilleure offre sur le marché</li>
         </ul>
         <h5>Appelez nous pour recevoir une offre</h5>
-        <Button className='home-sectin-1-cta'>
-          {IPHONE_ICON} 514-433-4978
-        </Button>
+        <a href='tel:5144334978'>
+          <Button className='home-sectin-1-cta'>
+            {IPHONE_ICON} 514-433-4978
+          </Button>
+        </a>
       </div>
     </section>
   );
