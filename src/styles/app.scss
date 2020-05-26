@@ -114,12 +114,28 @@ a {
       }
 
       .menu-links {
-        display: flex;
+        display: none;
         align-items: center;
+
+        @media screen and (min-width: 791px) {
+          display: flex;
+        }
 
         .navbar-menu-link {
           font-size: 1.2em;
           margin-right: 1.2em;
+        }
+      }
+
+      .mobile-menu-button {
+        display: none;
+
+        @media screen and (max-width: 790px) {
+          display: block;
+        }
+
+        button {
+          font-size: 4em;
         }
       }
     }
@@ -298,7 +314,7 @@ a {
 
     li {
       color: $home-section-2-li-color;
-      font-size: 1.6em;
+      font-size: 1.7em;
       margin-bottom: 10px;
     }
   }

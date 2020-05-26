@@ -1,5 +1,6 @@
 import React from 'react';
 import { AUTO_TURBO_LOGO } from 'src/components/common/images';
+import MobileMenu from 'src/components/common/mobile-menu';
 import { ARROW_BACK_IOS_ICON, KEYBOARD_ARROW_RIGHT_ICON } from 'src/components/material-ui/icons';
 import Button from 'src/components/material-ui/text-button';
 
@@ -19,6 +20,9 @@ function Navbar() {
         <Button className='navbar-menu-link'>
           F.A.Q.
         </Button>
+      </div>
+      <div className='mobile-menu-button'>
+        <MobileMenu />
       </div>
     </div>
   );
