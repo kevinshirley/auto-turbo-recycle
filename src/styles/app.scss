@@ -5,6 +5,7 @@ $black: #000;
 $grey-50: #fafafa;
 $blue-50: #e3f2fd;
 $blue-300: #64b5f6;
+$blue-600: #1e88e5;
 $blue-800: #1565c0;
 $blue-900: #0d47a1;
 $blue-1200: #093170;
@@ -18,7 +19,10 @@ $navbar-border-bottom-color: $black-015;
 $container-bg-color: $grey-50;
 $rounded-button-cta-bg-color: $blue-800;
 $home-section-1-bg-color: $white;
-$home-section-1-cta-border-color: $black;
+$home-section-1-cta-border-color: $black-015;
+$home-section-1-cta-bg-color: $blue-800;
+$home-section-1-cta-color: $white;
+$home-section-2-bg-color: $blue-800;
 
 /* Mixins */
 @mixin light-box-shadow {
@@ -138,25 +142,90 @@ a {
       text-align: center;
       line-height: 50px;
       margin-top: 10px;
-      margin-bottom: 15px;
+      margin-bottom: 50px;
     }
 
-    ul {
-      padding-inline-start: 0;
-      list-style-type: none;
+    .details {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
 
-      li {
-        font-size: 1.4em;
+      @media screen and (max-width: 690px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .list {
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 690px) {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        ul {
+          padding-inline-start: 0;
+          list-style-type: none;
+    
+          li {
+            font-size: 1.4em;
+            margin-bottom: 25px;
+          }
+        }
+      }
+
+      .media {
+        width: 50%;
+
+        @media screen and (max-width: 690px) {
+          width: 60%;
+        }
+
+        img {
+          width: 90%;
+        }
       }
     }
+
+    h5 {
+      font-size: 1.4em;
+      margin-bottom: 15px;
+      text-align: center;
+      padding: 0 10px;
+    }
+
 
     .home-sectin-1-cta {
       font-size: 2.7em;
       border: 2px solid $home-section-1-cta-border-color;
+      background: $home-section-1-cta-bg-color;
+      color: $home-section-1-cta-color;
+
+      @media screen and (max-width: 400px) {
+        font-size: 2.2em;
+      }
 
       .MuiSvgIcon-root {
         font-size: 1.2em;
       }
     }
+  }
+}
+
+.home-section-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: $home-section-2-bg-color;
+
+  h2 {
+    text-align: center;
   }
 }
