@@ -42,6 +42,7 @@ import HotelIcon from '@material-ui/icons/Hotel';
 import CommuteIcon from '@material-ui/icons/Commute';
 import MapIcon from '@material-ui/icons/Map';
 import DirectionsBoatIcon from '@material-ui/icons/DirectionsBoat';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 export const PORTFOLIO_ICON = (
   <BurstModeOutlinedIcon />
@@ -191,6 +192,10 @@ export const ARROW_BACK_IOS_ICON = (
 
 export const KEYBOARD_ARROW_RIGHT_ICON = (
   <KeyboardArrowRightIcon />
+);
+
+export const KEYBOARD_ARROW_DOWN_ICON = (
+  <KeyboardArrowDownIcon />
 );
 
 export const HOTEL_BED_ICON = (

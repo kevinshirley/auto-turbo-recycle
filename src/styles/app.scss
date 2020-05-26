@@ -23,6 +23,8 @@ $home-section-1-cta-border-color: $black-015;
 $home-section-1-cta-bg-color: $blue-800;
 $home-section-1-cta-color: $white;
 $home-section-2-bg-color: $blue-800;
+$home-section-2-h2-color: $white;
+$home-section-2-li-color: $white;
 
 /* Mixins */
 @mixin light-box-shadow {
@@ -221,11 +223,83 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background: $home-section-2-bg-color;
 
   h2 {
     text-align: center;
+    color: $home-section-2-h2-color;
+    font-size: 2.2em;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+
+  .media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 415px) {
+     display: none;
+    }
+
+    .tow-truck {
+      img {
+        width: 160px;
+      }
+    }
+
+    svg {
+      color: $white;
+      font-size: 8em;
+    }
+
+    .payment {
+      img {
+        width: 115px;
+      }
+    }
+  }
+
+  .mobile-media {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 416px) {
+     display: none;
+    }
+
+    .tow-truck {
+      img {
+        width: 160px;
+      }
+    }
+
+    svg {
+      color: $white;
+      font-size: 8em;
+    }
+
+    .payment {
+      img {
+        width: 115px;
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      color: $home-section-2-li-color;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
   }
 }
