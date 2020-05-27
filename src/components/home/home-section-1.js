@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Button from 'src/components/material-ui/text-button';
 import { IPHONE_ICON, CHECK_CIRCLE_ICON } from 'src/components/material-ui/icons';
 import { CAR_BREAKDOWN } from 'src/components/common/svg';
+import PhoneNumberMainCta from 'src/components/common/phone-number-main-cta';
 
 function HomeSection1() {
   return (
@@ -22,11 +23,7 @@ function HomeSection1() {
           </div>
         </div>
         <h5>Appelez nous pour recevoir une offre</h5>
-        <a href='tel:5144334978'>
-          <Button className='home-sectin-1-cta'>
-            {IPHONE_ICON} 514-433-4978
-          </Button>
-        </a>
+        <PhoneNumberMainCta />
       </div>
     </section>
   );
