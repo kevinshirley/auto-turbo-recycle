@@ -16,7 +16,7 @@ function HomeSection3() {
             </div>
             <div className='card'>
               <h3>Véhicule en tout état</h3>
-              <p>On s'occupe de véhicule accidenté, rouillé, avec problème de mécanique, etc. Quelque soit le problème, on vous aide à l'éliminer en venant recycler votre auto pour vous sans frais.</p>
+              <p>On s'occupe de venir remorquer votre véhicule accidenté, rouillé, avec problème de mécanique, etc. Quelque soit le problème, on vous aide à l'éliminer en venant recycler votre auto pour vous sans frais.</p>
               <a href='tel:5144334978'>Appeler nous maintenant {KEYBOARD_ARROW_RIGHT_ICON}</a>
             </div>
           </div>

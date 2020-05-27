@@ -12,6 +12,8 @@ $blue-1200: #093170;
 $white-015: rgba(255, 255, 255, 0.10);
 $black-015: rgba(5, 5, 5, 0.15);
 $link-color: #007bff;
+$yellow-300: #fff176;
+$yellow-500: #ffeb3b;
 
 // Component color
 $navbar-bg-color: $white;
@@ -26,6 +28,7 @@ $home-section-1-cta-color: $white;
 $home-section-2-bg-color: $blue-800;
 $home-section-2-h2-color: $white;
 $home-section-2-li-color: $white;
+$home-section-4-bg-color: $blue-800;
 
 /* Mixins */
 @mixin light-box-shadow {
@@ -158,6 +161,15 @@ a {
   
     .MuiSvgIcon-root {
       font-size: 1.2em;
+    }
+  }
+
+  .phone-number-main-cta--reverted {
+    background: $home-section-1-cta-color;
+    color: $home-section-1-cta-bg-color;
+
+    &:hover {
+      color: $home-section-1-cta-color;
     }
   }
 }
@@ -345,7 +357,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0;
+  margin: 50px 0;
 
   h2 {
     font-size: 2.8em;
@@ -443,4 +455,41 @@ a {
       }
     }
   }
+}
+
+.home-section-4 {
+  min-height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $home-section-4-bg-color;
+  padding: 50px 0;
+
+  .phone-icon {
+    width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .steps {
+    margin-top: 50px;
+    padding: 0 50px;
+
+    .step {
+      margin-bottom: 50px;
+
+      p {
+        color: $white;
+        font-size: 1.7em;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.footer {
+  
 }
