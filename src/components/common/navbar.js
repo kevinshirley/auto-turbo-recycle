@@ -7,17 +7,17 @@ function Navbar() {
   const MainNavbarContent = () => (
     <div className='inner'>
       <div className='logo'>
-        <img src={AUTO_TURBO_LOGO} alt='Trip Imagine Logo' />
+        <img src={AUTO_TURBO_LOGO} alt='Auto Turbo Logo' />
       </div>
       <div className='menu-links'>
         <Button className='navbar-menu-link'>
-          Comment ca marche?
+          Fonctionnement
         </Button>
         <Button className='navbar-menu-link'>
-          Scrap mon auto
+          Véhicule Scrap
         </Button>
         <Button className='navbar-menu-link'>
-          F.A.Q.
+          Contact
         </Button>
       </div>
       <div className='mobile-menu-button'>

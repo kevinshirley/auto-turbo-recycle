@@ -11,9 +11,11 @@ function HomeSection4() {
       </div>
       <div className='steps'>
         <div className='step'>
+          <h4>Contact</h4>
           <p>Appeler nous dès maintenant. Simplement nous fournir la marque du véhicule, le modèle, l'année, l'état du véhicule et la raison que vous voulez recycler le véhicule.</p>
         </div>
         <div className='step'>
+          <h4>Collect</h4>
           <p>Dès que vous acceptez l'offre de l'un de nos agents, nous pourrons envoyer l'un de nos recycleur à votre adresse pour recycler le véhicule et vous remettre votre argent comptant.</p>
         </div>
       </div>

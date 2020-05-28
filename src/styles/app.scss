@@ -3,6 +3,9 @@
 $white: #fff;
 $black: #000;
 $grey-50: #fafafa;
+$grey-800: #424242;
+$grey-900: #212121;
+$light-blue-50: #e1f5fe;
 $blue-50: #e3f2fd;
 $blue-300: #64b5f6;
 $blue-600: #1e88e5;
@@ -29,6 +32,10 @@ $home-section-2-bg-color: $blue-800;
 $home-section-2-h2-color: $white;
 $home-section-2-li-color: $white;
 $home-section-4-bg-color: $blue-800;
+$home-section-4-h4-color: $blue-800;
+$home-section-4-p-color: $white;
+$footer-section-bg-color: $grey-50;
+$footer-section-link-color: $blue-800;
 
 /* Mixins */
 @mixin light-box-shadow {
@@ -458,7 +465,6 @@ a {
 }
 
 .home-section-4 {
-  min-height: 350px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -479,10 +485,22 @@ a {
     padding: 0 50px;
 
     .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 50px;
 
+      h4 {
+        background: $home-section-4-p-color;
+        width: 85px;
+        text-align: center;
+        padding: 5px;
+        font-size: 1.1em;
+        color: $home-section-4-h4-color;
+      }
+
       p {
-        color: $white;
+        color: $home-section-4-p-color;
         font-size: 1.7em;
         text-align: center;
       }
@@ -491,5 +509,58 @@ a {
 }
 
 .footer {
-  
+  min-height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $footer-section-bg-color;
+  padding: 50px 0;
+
+  .logo {
+    margin-bottom: 30px;
+
+    img {
+      width: 180px;
+    }
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .link {
+      margin-bottom: 15px;
+
+      a {
+        color: $footer-section-link-color;
+        font-size: 1.7em;
+      }
+    }
+  }
+
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .label {
+      font-weight: 500;
+    }
+
+    span {
+      font-size: 1.3em;
+    }
+  }
+
+  .contact {
+    margin-bottom: 30px;
+
+    .phone-number-main-cta {
+      font-size: 1.7em;
+    }
+  }
 }
