@@ -6,7 +6,7 @@ import { KEYBOARD_ARROW_RIGHT_ICON } from 'src/components/material-ui/icons';
 
 function HomeSection3() {
   return (
-    <section className="home-section-3">
+    <section className="home-section-3" id='fonctionnement'>
       <h2>Une solution qui se déplace à vous</h2>
       <div className='cards'>
         <div className='row row-1'>

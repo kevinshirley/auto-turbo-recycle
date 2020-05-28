@@ -21,6 +21,7 @@ $yellow-500: #ffeb3b;
 // Component color
 $navbar-bg-color: $white;
 $navbar-border-bottom-color: $black-015;
+$mobile-menu-color: $grey-900;
 $container-bg-color: $grey-50;
 $rounded-button-cta-bg-color: $blue-800;
 $home-section-1-bg-color: $white;
@@ -177,6 +178,15 @@ a {
 
     &:hover {
       color: $home-section-1-cta-color;
+    }
+  }
+}
+
+.mobile-menu {
+  ul {
+    .MuiListItemText-primary {
+      color: $mobile-menu-color;
+      font-weight: 500;
     }
   }
 }

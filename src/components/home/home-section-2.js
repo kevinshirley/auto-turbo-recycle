@@ -5,7 +5,7 @@ import { KEYBOARD_ARROW_RIGHT_ICON, KEYBOARD_ARROW_DOWN_ICON } from 'src/compone
 
 function HomeSection2() {
   return (
-    <section className="home-section-2">
+    <section className="home-section-2" id='vehicule-scrap'>
       <h2>Recevez votre argent rapidement</h2>
       <div className='media'>
         <div className='tow-truck'>

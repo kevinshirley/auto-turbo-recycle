@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import cx from 'classnames';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import { makeStyles } from '@material-ui/core/styles';
 import { MENU } from 'src/components/material-ui/icons';
@@ -32,6 +33,11 @@ const useStyles = makeStyles({
 function MobileMenu() {
   const classes = useStyles(theme);
 
+  const mobileMenuClasses = cx({
+    [classes.list]: true,
+    'mobile-menu': true,
+  });
+
   const [state, setState] = React.useState({
     right: false,
   });
@@ -52,7 +58,7 @@ function MobileMenu() {
 
   const list = () => (
     <div
-      className={classes.list}
+      className={mobileMenuClasses}
       role="presentation"
       onClick={toggleDrawer('right', false)}
       onKeyDown={toggleDrawer('right', false)}
@@ -61,17 +67,21 @@ function MobileMenu() {
       }}
     >
       <List>
-        <ListItem button>
-          {/* <ListItemIcon>{obj.icon}</ListItemIcon> */}
-          <ListItemText primary={'test 1'} />
-        </ListItem>
-      </List>
-      <Divider />
-      <List>
-        <ListItem button>
-          {/* <ListItemIcon>{obj.icon}</ListItemIcon> */}
-          <ListItemText primary={'test 2'} />
-        </ListItem>
+        <a href='#fonctionnement'>
+          <ListItem button>
+            <ListItemText className='link' primary={'Fonctionnement'} />
+          </ListItem>
+        </a>
+        <a href='#vehicule-scrap'>
+          <ListItem button>
+            <ListItemText className='link' primary={'Véhicule Scrap'} />
+          </ListItem>
+        </a>
+        <a href='#contact'>
+          <ListItem button>
+            <ListItemText primary={'Contact'} />
+          </ListItem>
+        </a>
       </List>
     </div>
   );

@@ -3,6 +3,8 @@ import { AUTO_TURBO_LOGO } from 'src/components/common/images';
 import PhoneNumberMainCta from 'src/components/common/phone-number-main-cta';
 
 function Footer() {
+  const today = new Date(), year = today.getFullYear();
+
   return (
     <div className='footer'>
       <div className='logo'>
@@ -10,13 +12,13 @@ function Footer() {
       </div>
       <div className='menu-links'>
         <div className='link'>
-          <a href='#'>Fonctionnement</a>
+          <a href='#fonctionnement'>Fonctionnement</a>
         </div>
         <div className='link'>
-          <a href='#'>Véhicule Scrap</a>
+          <a href='#vehicule-scrap'>Véhicule Scrap</a>
         </div>
         <div className='link'>
-          <a href='#'>Contact</a>
+          <a href='#contact'>Contact</a>
         </div>
       </div>
       <div className='schedule'>
@@ -29,7 +31,7 @@ function Footer() {
         <PhoneNumberMainCta />
       </div>
       <div className='copyright'>
-        <small>© 2020 Auto Turbo, All Rights Reserved.</small>
+        <small>© {year} Auto Turbo, All Rights Reserved.</small>
       </div>
     </div>
   );

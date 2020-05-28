@@ -10,15 +10,21 @@ function Navbar() {
         <img src={AUTO_TURBO_LOGO} alt='Auto Turbo Logo' />
       </div>
       <div className='menu-links'>
-        <Button className='navbar-menu-link'>
-          Fonctionnement
-        </Button>
-        <Button className='navbar-menu-link'>
-          Véhicule Scrap
-        </Button>
-        <Button className='navbar-menu-link'>
-          Contact
-        </Button>
+        <a href='#fonctionnement'>
+          <Button className='navbar-menu-link'>
+            Fonctionnement
+          </Button>
+        </a>
+        <a href='#vehicule-scrap'>
+          <Button className='navbar-menu-link'>
+            Véhicule Scrap
+          </Button>
+        </a>
+        <a href='#contact'>
+          <Button className='navbar-menu-link'>
+            Contact
+          </Button>
+        </a>
       </div>
       <div className='mobile-menu-button'>
         <MobileMenu />

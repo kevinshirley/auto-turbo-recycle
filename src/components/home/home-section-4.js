@@ -5,7 +5,7 @@ import PhoneNumberMainCta from 'src/components/common/phone-number-main-cta';
 
 function HomeSection4() {
   return (
-    <section className="home-section-4">
+    <section className="home-section-4" id='contact'>
       <div className='phone-icon'>
         <img src={TELEPHONE} alt='Appeler nous' />
       </div>
