@@ -1,7 +1,6 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import Button from 'src/components/material-ui/text-button';
-import { IPHONE_ICON, CHECK_CIRCLE_ICON } from 'src/components/material-ui/icons';
+import { CHECK_CIRCLE_ICON } from 'src/components/material-ui/icons';
 import { CAR_BREAKDOWN } from 'src/components/common/svg';
 import PhoneNumberMainCta from 'src/components/common/phone-number-main-cta';
 

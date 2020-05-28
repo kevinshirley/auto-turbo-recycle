@@ -37,6 +37,9 @@ $home-section-4-h4-color: $blue-800;
 $home-section-4-p-color: $white;
 $footer-section-bg-color: $grey-50;
 $footer-section-link-color: $blue-800;
+$phone-button-fixed-bg-color: $blue-800;
+$phone-button-fixed-bg-color-hover: $blue-600;
+$phone-button-fixed-color: $white;
 
 /* Mixins */
 @mixin light-box-shadow {
@@ -178,6 +181,21 @@ a {
 
     &:hover {
       color: $home-section-1-cta-color;
+    }
+  }
+
+  .phone-button-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    outline: none;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: $phone-button-fixed-bg-color;
+    color: $phone-button-fixed-color;
+
+    &:hover {
+      background: $phone-button-fixed-bg-color-hover;
     }
   }
 }
