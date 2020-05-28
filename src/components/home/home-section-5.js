@@ -5,7 +5,19 @@ import { FORMAT_SHAPES_ICON, EMOJI_FLAGS_ICON, BEACH_ACCESS_ICON } from 'src/com
 function HomeSection5() {
   return (
     <section className="home-section-5">
-      home section 5
+      <div className='auto-offer'>
+        <p className='price-condition'>Jusqu'à</p>
+        <h3>1500$</h3>
+        <p className='price-condition'>Pour votre auto scrap</p>
+        <p className='price-description'>L'offre varie selon le prix courant du métal, le poids et l'état du véhicule.</p>
+      </div>
+      <hr />
+      <div className='auto-offer'>
+        <p className='price-condition'>Jusqu'à</p>
+        <h3>3000$</h3>
+        <p className='price-condition'>Pour votre auto usagé</p>
+        <p className='price-description'>L'agent au téléphone pourra vous donnez une offre, pour votre véhicule usagé, selon les informations de l'état du véhicule que vous allez nous fournir.</p>
+      </div>
     </section>
   );
 };
