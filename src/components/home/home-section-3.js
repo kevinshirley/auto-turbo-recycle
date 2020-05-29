@@ -40,7 +40,7 @@ function HomeSection3() {
             </div>
             <div className='card'>
               <h3>Recycle ton auto</h3>
-              <p>Nous récuperons les pièces du véhicule pour donner une nouvelle vie aux éléments réutilisables. Vous contribuez au bien de la planète en nous permettant de réutiliser les pièces de votre auto scrap.</p>
+              <p>Nous récuperons les pièces du véhicule pour donner une nouvelle vie aux éléments réutilisables. Vous contribuez au bien de la planète en nous permettant de réutiliser les pièces de votre auto usagé.</p>
               <a href='tel:5144334978'>Appeler nous maintenant {KEYBOARD_ARROW_RIGHT_ICON}</a>
             </div>
           </div>

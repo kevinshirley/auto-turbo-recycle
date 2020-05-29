@@ -15,7 +15,7 @@ function Footer() {
           <a href='#fonctionnement'>Fonctionnement</a>
         </div>
         <div className='link'>
-          <a href='#vehicule-scrap'>Véhicule Scrap</a>
+          <a href='#vendre-mon-auto'>Vendre mon auto</a>
         </div>
         <div className='link'>
           <a href='#contact'>Contact</a>

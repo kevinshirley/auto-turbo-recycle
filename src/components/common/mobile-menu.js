@@ -72,9 +72,9 @@ function MobileMenu() {
             <ListItemText className='link' primary={'Fonctionnement'} />
           </ListItem>
         </a>
-        <a href='#vehicule-scrap'>
+        <a href='#vendre-mon-auto'>
           <ListItem button>
-            <ListItemText className='link' primary={'Véhicule Scrap'} />
+            <ListItemText className='link' primary={'Vendre mon auto'} />
           </ListItem>
         </a>
         <a href='#contact'>

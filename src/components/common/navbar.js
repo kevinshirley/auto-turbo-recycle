@@ -15,9 +15,9 @@ function Navbar() {
             Fonctionnement
           </Button>
         </a>
-        <a href='#vehicule-scrap'>
+        <a href='#vendre-mon-auto'>
           <Button className='navbar-menu-link'>
-            Véhicule Scrap
+            Vendre mon auto
           </Button>
         </a>
         <a href='#contact'>

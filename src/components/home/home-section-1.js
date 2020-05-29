@@ -8,7 +8,7 @@ function HomeSection1() {
   return (
     <section className="home-section-1">
       <div className="inner">
-        <h1>On achète votre véhicule scrap</h1>
+        <h1>On achète votre véhicule usagé</h1>
         <div className='details'>
           <div className='list'>
             <ul>
