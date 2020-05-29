@@ -1,17 +1,13 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import cx from 'classnames';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import { makeStyles } from '@material-ui/core/styles';
 import { MENU } from 'src/components/material-ui/icons';
-import TextField from 'src/components/common/text-field';
-import RoundedButton from 'src/components/material-ui/rounded-button';
-import Avatar from 'src/components/material-ui/avatar';
 import Button from 'src/components/material-ui/text-button';
 import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import useI18n from 'src/hooks/use-i18n';
 
 const theme = {
   list: {
@@ -31,6 +27,7 @@ const useStyles = makeStyles({
 });
 
 function MobileMenu() {
+  const i18n = useI18n();
   const classes = useStyles(theme);
 
   const mobileMenuClasses = cx({
@@ -38,7 +35,7 @@ function MobileMenu() {
     'mobile-menu': true,
   });
 
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     right: false,
   });
 
@@ -69,17 +66,17 @@ function MobileMenu() {
       <List>
         <a href='#fonctionnement'>
           <ListItem button>
-            <ListItemText className='link' primary={'Fonctionnement'} />
+            <ListItemText className='link' primary={i18n.t('mobileMenu.link1')} />
           </ListItem>
         </a>
         <a href='#vendre-mon-auto'>
           <ListItem button>
-            <ListItemText className='link' primary={'Vendre mon auto'} />
+            <ListItemText className='link' primary={i18n.t('mobileMenu.link2')} />
           </ListItem>
         </a>
         <a href='#contact'>
           <ListItem button>
-            <ListItemText primary={'Contact'} />
+            <ListItemText className='link' primary={i18n.t('mobileMenu.link3')} />
           </ListItem>
         </a>
       </List>

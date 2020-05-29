@@ -3,45 +3,52 @@ import Fade from 'react-reveal/Fade';
 import { MONEY, CAR_RECYCLE, ECO } from 'src/components/common/svg';
 import PhoneNumberMainCta from 'src/components/common/phone-number-main-cta';
 import { KEYBOARD_ARROW_RIGHT_ICON } from 'src/components/material-ui/icons';
+import useI18n from 'src/hooks/use-i18n';
 
 function HomeSection3() {
+  const i18n = useI18n();
+
+  const CardCta = () => (
+    <a href={i18n.t('common.companyPhoneNumberHref')}>{i18n.t('homeSection3.cardCta')} {KEYBOARD_ARROW_RIGHT_ICON}</a>
+  );
+
   return (
     <section className="home-section-3" id='fonctionnement'>
-      <h2>Une solution qui se déplace à vous</h2>
+      <h2>{i18n.t('homeSection3.title')}</h2>
       <div className='cards'>
         <div className='row row-1'>
           <div className='content'>
             <div className='image'>
-              <img src={CAR_RECYCLE} alt='Recycle your car' />
+              <img src={CAR_RECYCLE} alt={i18n.t('alt.recycleYourCar')} />
             </div>
             <div className='card'>
-              <h3>Véhicule en tout état</h3>
-              <p>On s'occupe de venir remorquer votre véhicule accidenté, rouillé, avec problème de mécanique, etc. Quelque soit le problème, on vous aide à l'éliminer en venant recycler votre auto pour vous sans frais.</p>
-              <a href='tel:5144334978'>Appeler nous maintenant {KEYBOARD_ARROW_RIGHT_ICON}</a>
+              <h3>{i18n.t('homeSection3.card1.title')}</h3>
+              <p>{i18n.t('homeSection3.card1.description')}</p>
+              <CardCta />
             </div>
           </div>
         </div>
         <div className='row row-2'>
           <div className='content'>
             <div className='image'>
-              <img src={MONEY} alt='Recycle your car' />
+              <img src={MONEY} alt={i18n.t('alt.receiveYourPayment')} />
             </div>
             <div className='card'>
-              <h3>Une offre imbattable</h3>
-              <p>Plus besoin de vous déplacez. Simplement nous appeler pour recevoir une proposition incomparable pour votre véhicule, en quelques minutes, avec l'un de nos agent.</p>
-              <a href='tel:5144334978'>Appeler nous maintenant {KEYBOARD_ARROW_RIGHT_ICON}</a>
+              <h3>{i18n.t('homeSection3.card2.title')}</h3>
+              <p>{i18n.t('homeSection3.card2.description')}</p>
+              <CardCta />
             </div>
           </div>
         </div>
         <div className='row row-3'>
           <div className='content'>
             <div className='image'>
-              <img src={ECO} alt='Recycle your car' />
+              <img src={ECO} alt={i18n.t('alt.recycleForThePlanet')} />
             </div>
             <div className='card'>
-              <h3>Recycle ton auto</h3>
-              <p>Nous récuperons les pièces du véhicule pour donner une nouvelle vie aux éléments réutilisables. Vous contribuez au bien de la planète en nous permettant de réutiliser les pièces de votre auto usagé.</p>
-              <a href='tel:5144334978'>Appeler nous maintenant {KEYBOARD_ARROW_RIGHT_ICON}</a>
+              <h3>{i18n.t('homeSection3.card3.title')}</h3>
+              <p>{i18n.t('homeSection3.card3.description')}</p>
+              <CardCta />
             </div>
           </div>
         </div>

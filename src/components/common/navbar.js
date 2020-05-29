@@ -2,27 +2,30 @@ import React from 'react';
 import { AUTO_TURBO_LOGO } from 'src/components/common/images';
 import MobileMenu from 'src/components/common/mobile-menu';
 import Button from 'src/components/material-ui/text-button';
+import useI18n from 'src/hooks/use-i18n';
 
 function Navbar() {
+  const i18n = useI18n();
+
   const MainNavbarContent = () => (
     <div className='inner'>
       <div className='logo'>
-        <img src={AUTO_TURBO_LOGO} alt='Auto Turbo Logo' />
+        <img src={AUTO_TURBO_LOGO} alt={i18n.t('alt.autoTurboLogo')} />
       </div>
       <div className='menu-links'>
         <a href='#fonctionnement'>
           <Button className='navbar-menu-link'>
-            Fonctionnement
+            {i18n.t('navigation.link1')}
           </Button>
         </a>
         <a href='#vendre-mon-auto'>
           <Button className='navbar-menu-link'>
-            Vendre mon auto
+            {i18n.t('navigation.link2')}
           </Button>
         </a>
         <a href='#contact'>
           <Button className='navbar-menu-link'>
-            Contact
+            {i18n.t('navigation.link3')}
           </Button>
         </a>
       </div>

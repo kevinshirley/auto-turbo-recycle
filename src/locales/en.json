@@ -1,10 +1,17 @@
 {
-  "intro": {
-    "welcome": "Welcome, {{username}}!",
-    "text": "I hope you find this useful.",
-    "description": "This example demonstrate how to change the language for SSG and SSR optimized pages."
+  "footer": {
+    "fonctionnement": "Fonctionnement",
+    "vendreMonAuto": "Vendre mon auto",
+    "contact": "Contact",
+    "mondayToFriday": "Lundi au Vendredi",
+    "mondayToFridayHours": "07:00 - 21:00",
+    "saturdayToSunday": "Samedi au Dimanche",
+    "saturdayToSundayHours": "07:00 - 18:00",
+    "copyright": "© {{ year }} Auto Turbo, All Rights Reserved."
   },
-  "dashboard": {
-    "description": "This example demonstrate how to change the language on client side only. Useful for dashboards because they don't require SEO."
+  "navigation": {
+    "fonctionnement": "Fonctionnement",
+    "vendreMonAuto": "Vendre mon auto",
+    "contact": "Contact"
   }
 }
