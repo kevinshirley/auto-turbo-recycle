@@ -1,8 +1,9 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { FORMAT_SHAPES_ICON, EMOJI_FLAGS_ICON, BEACH_ACCESS_ICON } from 'src/components/material-ui/icons';
+import useI18n from 'src/hooks/use-i18n';
 
 function HomeSection5() {
+  const i18n = useI18n();
   return (
     <section className="home-section-5">
       <div className='auto-offer'>
@@ -15,7 +16,7 @@ function HomeSection5() {
       <div className='auto-offer'>
         <p className='price-condition'>Jusqu'à</p>
         <h3>3000$</h3>
-        <p className='price-condition'>Pour votre auto usagé</p>
+        <p className='price-condition'>{i18n.t('intro.text')}</p>
         <p className='price-description'>L'agent au téléphone pourra vous donnez une offre, pour votre véhicule usagé, selon les informations de l'état du véhicule que vous allez nous fournir.</p>
       </div>
     </section>
