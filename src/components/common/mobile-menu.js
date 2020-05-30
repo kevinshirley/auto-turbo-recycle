@@ -64,17 +64,17 @@ function MobileMenu() {
       }}
     >
       <List>
-        <a href='#fonctionnement'>
+        <a href={i18n.t('navigation.howItWorksIdHash')}>
           <ListItem button>
             <ListItemText className='link' primary={i18n.t('mobileMenu.link1')} />
           </ListItem>
         </a>
-        <a href='#vendre-mon-auto'>
+        <a href={i18n.t('navigation.sellMyCarIdHash')}>
           <ListItem button>
             <ListItemText className='link' primary={i18n.t('mobileMenu.link2')} />
           </ListItem>
         </a>
-        <a href='#contact'>
+        <a href={i18n.t('navigation.contactIdHash')}>
           <ListItem button>
             <ListItemText className='link' primary={i18n.t('mobileMenu.link3')} />
           </ListItem>

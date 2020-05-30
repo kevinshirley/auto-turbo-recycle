@@ -14,13 +14,13 @@ function Footer() {
       </div>
       <div className='menu-links'>
         <div className='link'>
-          <a href='#fonctionnement'>{i18n.t('footer.link1')}</a>
+          <a href={i18n.t('navigation.howItWorksIdHash')}>{i18n.t('footer.link1')}</a>
         </div>
         <div className='link'>
-          <a href='#vendre-mon-auto'>{i18n.t('footer.link2')}</a>
+          <a href={i18n.t('navigation.sellMyCarIdHash')}>{i18n.t('footer.link2')}</a>
         </div>
         <div className='link'>
-          <a href='#contact'>{i18n.t('footer.link3')}</a>
+          <a href={i18n.t('navigation.contactIdHash')}>{i18n.t('footer.link3')}</a>
         </div>
       </div>
       <div className='schedule'>

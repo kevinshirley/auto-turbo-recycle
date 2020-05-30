@@ -8,7 +8,7 @@ function HomeSection2() {
   const i18n = useI18n();
 
   return (
-    <section className="home-section-2" id='vendre-mon-auto'>
+    <section className="home-section-2" id={i18n.t('navigation.sellMyCarId')}>
       <h2>{i18n.t('homeSection2.title')}</h2>
       <div className='media'>
         <div className='tow-truck'>

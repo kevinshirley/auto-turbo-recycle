@@ -13,7 +13,7 @@ function HomeSection3() {
   );
 
   return (
-    <section className="home-section-3" id='fonctionnement'>
+    <section className="home-section-3" id={i18n.t('navigation.howItWorksId')}>
       <h2>{i18n.t('homeSection3.title')}</h2>
       <div className='cards'>
         <div className='row row-1'>

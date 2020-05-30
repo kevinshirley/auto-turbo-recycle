@@ -86,6 +86,12 @@
   "navigation": {
     "link1": "Comment ca marche",
     "link2": "Vendre mon auto",
-    "link3": "Contact"
+    "link3": "Contact",
+    "howItWorksId": "comment-ca-fontionne",
+    "howItWorksIdHash": "#comment-ca-fontionne",
+    "sellMyCarId": "vendre-mon-auto",
+    "sellMyCarIdHash": "#vendre-mon-auto",
+    "contactId": "contact",
+    "contactIdHash": "#contact"
   }
 }

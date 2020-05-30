@@ -13,17 +13,17 @@ function Navbar() {
         <img src={AUTO_TURBO_LOGO} alt={i18n.t('alt.autoTurboLogo')} />
       </div>
       <div className='menu-links'>
-        <a href='#fonctionnement'>
+        <a href={i18n.t('navigation.howItWorksIdHash')}>
           <Button className='navbar-menu-link'>
             {i18n.t('navigation.link1')}
           </Button>
         </a>
-        <a href='#vendre-mon-auto'>
+        <a href={i18n.t('navigation.sellMyCarIdHash')}>
           <Button className='navbar-menu-link'>
             {i18n.t('navigation.link2')}
           </Button>
         </a>
-        <a href='#contact'>
+        <a href={i18n.t('navigation.contactIdHash')}>
           <Button className='navbar-menu-link'>
             {i18n.t('navigation.link3')}
           </Button>

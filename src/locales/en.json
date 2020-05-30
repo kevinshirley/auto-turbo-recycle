@@ -86,6 +86,12 @@
   "navigation": {
     "link1": "How it works",
     "link2": "Sell my car",
-    "link3": "Contact"
+    "link3": "Contact",
+    "howItWorksId": "how-it-works",
+    "howItWorksIdHash": "#how-it-works",
+    "sellMyCarId": "sell-my-car",
+    "sellMyCarIdHash": "#sell-my-car",
+    "contactId": "contact",
+    "contactIdHash": "#contact"
   }
 }
