@@ -2,6 +2,7 @@ import React from 'react';
 import { AUTO_TURBO_LOGO } from 'src/components/common/images';
 import PhoneNumberMainCta from 'src/components/common/phone-number-main-cta';
 import useI18n from 'src/hooks/use-i18n';
+import LanguageSelection from 'src/components/common/language-selection';
 
 function Footer() {
   const i18n = useI18n();
@@ -23,6 +24,7 @@ function Footer() {
           <a href={i18n.t('navigation.contactIdHash')}>{i18n.t('footer.link3')}</a>
         </div>
       </div>
+      <LanguageSelection />
       <div className='schedule'>
         <span className='label'>{i18n.t('footer.mondayToFriday')}</span>
         <span>{i18n.t('footer.mondayToFridayHours')}</span>

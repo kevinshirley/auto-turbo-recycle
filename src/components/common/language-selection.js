@@ -27,6 +27,7 @@ function LanguageSelection() {
   return (
     <Select
       native
+      className='language-selection'
       value={state.language}
       onChange={handleChange}
       inputProps={{

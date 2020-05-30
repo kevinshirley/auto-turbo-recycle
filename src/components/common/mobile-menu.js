@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import * as R from 'ramda';
 import cx from 'classnames';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,6 +9,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import useI18n from 'src/hooks/use-i18n';
+import Link from 'src/components/common/link';
+import { languages } from 'src/lib/i18n';
 
 const theme = {
   list: {
@@ -79,6 +82,13 @@ function MobileMenu() {
             <ListItemText className='link' primary={i18n.t('mobileMenu.link3')} />
           </ListItem>
         </a>
+        <div className='language'>
+          {languages.map(lang => (
+            <Link href={`/${lang}`}>
+              {R.toUpper(lang)}
+            </Link>
+          ))}
+        </div>
       </List>
     </div>
   );
