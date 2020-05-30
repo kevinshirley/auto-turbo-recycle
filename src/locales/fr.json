@@ -13,14 +13,14 @@
     "companyPhoneNumberHref": "tel:5144334978"
   },
   "footer": {
-    "link1": "Fonctionnement",
+    "link1": "Comment ca marche",
     "link2": "Vendre mon auto",
     "link3": "Contact",
     "mondayToFriday": "Lundi au Vendredi",
     "mondayToFridayHours": "07:00 - 21:00",
     "saturdayToSunday": "Samedi au Dimanche",
     "saturdayToSundayHours": "07:00 - 18:00",
-    "copyright": "© {{ year }} Auto Turbo, All Rights Reserved."
+    "copyright": "© {{ year }} Auto Turbo, Tous Droits Réservés."
   },
   "homeSection1": {
     "title": "On achète votre véhicule usagé",
@@ -79,12 +79,12 @@
     }
   },
   "mobileMenu": {
-    "link1": "Fonctionnement",
+    "link1": "Comment ca marche",
     "link2": "Vendre mon auto",
     "link3": "Contact"
   },
   "navigation": {
-    "link1": "Fonctionnement",
+    "link1": "Comment ca marche",
     "link2": "Vendre mon auto",
     "link3": "Contact"
   }

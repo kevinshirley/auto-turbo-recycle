@@ -2,7 +2,6 @@ import HomePage from 'src/components/home';
 import { languages } from 'src/lib/i18n';
 
 export async function getStaticProps({ params }) {
-  console.log('params', params);
   const { default: lngDict = {} } = await import(
     `../../src/locales/${params.lng}.json`
   )
