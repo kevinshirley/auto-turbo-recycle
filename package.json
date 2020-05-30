@@ -20,6 +20,7 @@
     "next": "9.4.2",
     "next-images": "^1.4.0",
     "next-videos": "^1.1.4",
+    "ramda": "^0.27.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-reveal": "^1.2.2",

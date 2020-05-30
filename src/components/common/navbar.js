@@ -1,6 +1,7 @@
 import React from 'react';
 import { AUTO_TURBO_LOGO } from 'src/components/common/images';
 import MobileMenu from 'src/components/common/mobile-menu';
+import LanguageSelection from 'src/components/common/language-selection';
 import Button from 'src/components/material-ui/text-button';
 import useI18n from 'src/hooks/use-i18n';
 
@@ -28,6 +29,7 @@ function Navbar() {
             {i18n.t('navigation.link3')}
           </Button>
         </a>
+        <LanguageSelection />
       </div>
       <div className='mobile-menu-button'>
         <MobileMenu />
