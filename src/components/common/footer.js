@@ -1,37 +1,41 @@
 import React from 'react';
 import { AUTO_TURBO_LOGO } from 'src/components/common/images';
 import PhoneNumberMainCta from 'src/components/common/phone-number-main-cta';
+import useI18n from 'src/hooks/use-i18n';
+import LanguageSelection from 'src/components/common/language-selection';
 
 function Footer() {
+  const i18n = useI18n();
   const today = new Date(), year = today.getFullYear();
 
   return (
     <div className='footer'>
       <div className='logo'>
-        <img src={AUTO_TURBO_LOGO} alt='Auto Turbo Logo' />
+        <img src={AUTO_TURBO_LOGO} alt={i18n.t('alt.autoTurboLogo')} />
       </div>
       <div className='menu-links'>
         <div className='link'>
-          <a href='#fonctionnement'>Fonctionnement</a>
+          <a href={i18n.t('navigation.howItWorksIdHash')}>{i18n.t('footer.link1')}</a>
         </div>
         <div className='link'>
-          <a href='#vendre-mon-auto'>Vendre mon auto</a>
+          <a href={i18n.t('navigation.sellMyCarIdHash')}>{i18n.t('footer.link2')}</a>
         </div>
         <div className='link'>
-          <a href='#contact'>Contact</a>
+          <a href={i18n.t('navigation.contactIdHash')}>{i18n.t('footer.link3')}</a>
         </div>
       </div>
+      <LanguageSelection />
       <div className='schedule'>
-        <span className='label'>Lundi au Vendredi</span>
-        <span>07:00 - 21:00</span>
-        <span className='label'>Samedi au Dimanche</span>
-        <span>07:00 - 18:00</span>
+        <span className='label'>{i18n.t('footer.mondayToFriday')}</span>
+        <span>{i18n.t('footer.mondayToFridayHours')}</span>
+        <span className='label'>{i18n.t('footer.saturdayToSunday')}</span>
+        <span>{i18n.t('footer.saturdayToSundayHours')}</span>
       </div>
       <div className='contact'>
         <PhoneNumberMainCta />
       </div>
       <div className='copyright'>
-        <small>© {year} Auto Turbo, All Rights Reserved.</small>
+        <small>{i18n.t('footer.copyright', { year })}</small>
       </div>
     </div>
   );

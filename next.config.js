@@ -17,6 +17,17 @@ module.exports = withVideos(
           config.resolve.extensions.push('.js');
           return config;
         },
+        experimental: {
+          redirects() {
+            return [
+              {
+                source: '/',
+                permanent: true,
+                destination: '/fr',
+              },
+            ]
+          },
+        },
       }),
     ),
   ),

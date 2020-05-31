@@ -141,6 +141,10 @@ a {
           font-size: 1.2em;
           margin-right: 1.2em;
         }
+        
+        .language-selection {
+          margin-right: 1.2em;
+        }
       }
 
       .mobile-menu-button {
@@ -207,6 +211,12 @@ a {
       color: $mobile-menu-color;
       font-weight: 500;
     }
+
+    .language {
+      display: flex;
+      justify-content: space-around;
+      padding: 25px 10px;
+    }
   }
 }
 
@@ -226,7 +236,7 @@ a {
     h1 {
       font-size: 3.5em;
       text-align: center;
-      line-height: 50px;
+      line-height: 58px;
       margin-top: 10px;
       margin-bottom: 50px;
     }
@@ -642,5 +652,9 @@ a {
     .phone-number-main-cta {
       font-size: 1.7em;
     }
+  }
+
+  .language-selection {
+    margin-bottom: 30px;
   }
 }
