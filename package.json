@@ -24,10 +24,13 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-reveal": "^1.2.2",
-    "rosetta": "^1.0.0"
+    "rosetta": "^1.0.0",
+    "serverless": "^1.72.0",
+    "serverless-nextjs-plugin": "^2.5.0-alpha.0"
   },
   "devDependencies": {
     "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "serverless-next.js": "^1.12.0-alpha.6"
   }
 }
