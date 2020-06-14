@@ -9,7 +9,7 @@ import Router from 'next/router';
 function Home() {
   useEffect(() => {
     const { pathname } = Router;
-    if(pathname == '/' ) {
+    if (pathname == '/' ) {
       Router.push('/fr');
     }
   });

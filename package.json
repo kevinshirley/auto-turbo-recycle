@@ -1,6 +1,8 @@
 {
   "name": "autoturborecycle",
   "version": "1.0.0",
+  "author": "Kevin Shirley",
+  "license": "MIT",
   "scripts": {
     "dev": "nodemon server",
     "build": "next build",
